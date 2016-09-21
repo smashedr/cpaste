@@ -11,5 +11,5 @@ https://git.cssnr.com/shane/php_pastebin
 # Installation
 
 1. `sudo pip install requests`
-2. `sudo curl -o /usr/local/bin/cpaste https://git.cssnr.com/shane/cpaste/raw/master/cpaste.py`
+2. `sudo curl -so /usr/local/bin/cpaste https://git.cssnr.com/shane/cpaste/raw/master/cpaste.py`
 3. `sudo chmod +x  /usr/local/bin/cpaste`
