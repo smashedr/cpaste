@@ -1,6 +1,6 @@
-- [Requirements](#Requirements)
-- [Installation](#Installation)
-- [Usage](#Usage)
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Usage](#usage)
 
 # cpaste
 
