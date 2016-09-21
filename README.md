@@ -30,7 +30,7 @@ http://p.cssnr.com/669
 #### From a FILE
 
 ```
-# cpaste /usr/local/bin/cpaste
+# cpaste cpaste.txt
 http://p.cssnr.com/671
 ```
 
