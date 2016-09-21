@@ -2,12 +2,7 @@
 import sys
 import re
 import traceback
-
-try:
-    import requests
-except ImportError:
-    print("The 'requests' package is required.\nThis package can be installed with:\n\n\tpip install requests\n")
-    sys.exit(1)
+import requests
 
 try:
     file = sys.argv[1]
@@ -15,9 +10,9 @@ try:
         with open(file) as f:
             paste = f.read()
     except:
-        print('File input error:\n%s' % traceback.format_exc())
+        print(traceback.format_exc())
         sys.exit(1)
-except:
+except IndexError:
     paste = sys.stdin.read()
 
 if len(paste) > 4000000000 or len(paste) < 5:
