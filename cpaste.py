@@ -2,26 +2,26 @@
 import sys
 import re
 import traceback
-import argparse
+
 try:
     import requests
 except ImportError:
     print("The 'requests' package is required.\nThis package can be installed with:\n\n\tpip install requests\n")
     sys.exit(1)
 
-parser = argparse.ArgumentParser()
-parser.add_argument('file', nargs='?', help='File to Upload', metavar='filename.txt')
-args = parser.parse_args()
-
-if args.file:
-    with open(args.file) as f:
-        paste = f.read()
-else:
+try:
+    file = sys.argv[1]
+    try:
+        with open(file) as f:
+            paste = f.read()
+    except:
+        print('File input error:\n%s' % traceback.format_exc())
+        sys.exit(1)
+except:
     paste = sys.stdin.read()
 
-paste_len = len(paste)
-if paste_len > 4000000000 or paste_len < 5:
-    print('Content length is too long/short: %s' % paste_len)
+if len(paste) > 4000000000 or len(paste) < 5:
+    print('Content length is too long/short: %s' % len(paste))
     sys.exit(1)
 
 try:
@@ -35,3 +35,4 @@ try:
 except:
     print('Error creating paste:\n%s' % traceback.format_exc())
     sys.exit(1)
+
