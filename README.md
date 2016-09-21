@@ -2,4 +2,14 @@
 
 Python CLI Paste Bin API for http://p.cssnr.com/
 
-- https://git.cssnr.com/shane/php_pastebin
+https://git.cssnr.com/shane/php_pastebin
+
+# Requirements
+
+1. requests - http://docs.python-requests.org/en/master/user/install/#install
+
+# Installation
+
+1. `sudo pip install requests`
+2. `sudo curl -o /usr/local/bin/cpaste https://git.cssnr.com/shane/cpaste/raw/master/cpaste.py`
+3. `sudo chmod +x  /usr/local/bin/cpaste`
