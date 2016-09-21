@@ -1,3 +1,7 @@
+- [Requirements](#Requirements)
+- [Installation](#Installation)
+- [Usage](#Usage)
+
 # cpaste
 
 Python CLI Paste Bin API for http://p.cssnr.com/
@@ -16,21 +20,21 @@ https://git.cssnr.com/shane/php_pastebin
 
 # Usage
 
-- From a PIPE:
+#### From a PIPE
 
 ```
 # rpm -qa | cpaste
 http://p.cssnr.com/669
 ```
 
-- From a FILE:
+#### From a FILE
 
 ```
 # cpaste /usr/local/bin/cpaste
 http://p.cssnr.com/671
 ```
 
-- From STDIN:
+#### From STDIN
 
 ```
 # cpaste
