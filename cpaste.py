@@ -30,4 +30,3 @@ try:
 except:
     print('Error creating paste:\n%s' % traceback.format_exc())
     sys.exit(1)
-
