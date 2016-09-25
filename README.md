@@ -14,7 +14,12 @@ https://git.cssnr.com/shane/php_pastebin
 
 # Installation
 
+### Automatic
+
 Bash the `setup.sh` script included with this repository, or:
+- `bash <(curl -s https://git.cssnr.com/shane/cpaste/raw/master/setup.sh)`
+
+### Manual
 
 1. `sudo pip install requests`
 2. `sudo curl -so /usr/local/bin/cpaste https://git.cssnr.com/shane/cpaste/raw/master/cpaste.py`
