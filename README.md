@@ -1,7 +1,7 @@
 - [Requirements](#requirements)
 - [Installation](#installation)
     - [Windows](#windows)
-    - [Linux/Mac](#linux-mac)
+    - [Linux/Mac](#linuxmac)
 - [Usage](#usage)
 
 # cpaste
