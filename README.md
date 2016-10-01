@@ -25,8 +25,8 @@ Download and move the executable to your %PATH% (example: `%SystemRoot%\system32
 
 ### Automatic
 
-Bash the `setup.sh` script included with this repository, or:
-- `bash <(curl -s https://git.cssnr.com/shane/cpaste/raw/master/setup.sh)`
+Bash the `install.sh` script included with this repository, or:
+- `bash <(curl -s https://git.cssnr.com/shane/cpaste/raw/master/install.sh)`
 
 ### Manual
 
