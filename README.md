@@ -1,7 +1,7 @@
-- [Requirements](#requirements)
 - [Installation](#installation)
     - [Windows](#windows)
-    - [Linux/Mac](#linuxmac)
+    - [Linux](#linux)
+    - [Mac](#mac)
 - [Usage](#usage)
 
 # cpaste
@@ -10,25 +10,31 @@ Python CLI Paste Bin API for http://p.cssnr.com/
 
 https://git.cssnr.com/shane/php_pastebin
 
-# Requirements
-
-1. requests - http://docs.python-requests.org/en/master/user/install/#install
-
 # Installation
 
-## Windows
+### Windows
 
-Download and move the executable to your %PATH% (example: `%SystemRoot%\system32`)
-- http://cdn.cssnr.com/cpaste.exe
+1. Download the executable: http://cdn.cssnr.com/cpaste/latest/dist/windows/cpaste.exe
+2. Move the executable to your %PATH% (example: `%SystemRoot%\system32`)
 
-## Linux/Mac
+### Linux
 
-### Automatic
+2. `sudo curl -so /usr/local/bin/cpaste http://cdn.cssnr.com/cpaste/latest/dist/linux/cpaste`
+3. `sudo chmod +x  /usr/local/bin/cpaste`
+
+### Mac
+
+2. `sudo curl -so /usr/local/bin/cpaste http://cdn.cssnr.com/cpaste/latest/dist/mac/cpaste`
+3. `sudo chmod +x  /usr/local/bin/cpaste`
+
+## Manual Install
+
+Requires: `Python`
 
 Bash the `install.sh` script included with this repository, or:
 - `bash <(curl -s https://git.cssnr.com/shane/cpaste/raw/master/install.sh)`
 
-### Manual
+### Alternative Method
 
 1. `sudo pip install requests`
 2. `sudo curl -so /usr/local/bin/cpaste https://git.cssnr.com/shane/cpaste/raw/master/cpaste.py`
